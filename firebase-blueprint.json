@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "Device": {
+      "title": "Device",
+      "description": "SafeBand wearable telemetry payload for IoT and ESP32 sync",
+      "type": "object",
+      "properties": {
+        "deviceId": { "type": "string" },
+        "online": { "type": "boolean" },
+        "battery": { "type": "number" },
+        "lastSync": { "type": "number" }
+      },
+      "required": ["deviceId", "online"]
+    }
+  },
+  "firestore": {
+    "/devices/{deviceId}": {
+      "schema": "Device",
+      "description": "Registered SafeBand devices and health monitoring logs"
+    }
+  }
+}

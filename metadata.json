@@ -1,0 +1,6 @@
+{
+  "name": "SafeBand IoT Health & Safety Platform",
+  "description": "Real-time health telemetry, fall detection, emergency SOS alert dispatch, and GPS monitoring dashboard for SafeBand wearable users and caregivers.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
